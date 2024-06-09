@@ -1,0 +1,181 @@
+body {
+  background: #121212; /* Dark background */
+  color: #eaeaea; /* Lighter text for better readability */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#todo-container {
+  background: #333333; /* Slightly lighter background for container */
+  width: 80vw; /* Full width */
+  height: 60vh; /* Full height of the viewport */
+  margin: 0 auto; /* Centering the container vertically and horizontally */
+  border: 2px solid #ff79c6; /* High contrast border */
+  padding: 20px;
+  color: #ffffff; /* Brighter text for contrast */
+  border-radius: 15px;
+}
+
+#input-box {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ff79c6; /* High contrast border */
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#input-button {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff79c6; /* Button color for high visibility */
+}
+
+.task button {
+  background: #ff79c6; /* Button color for high visibility */
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 3px 5px;
+  border: none;
+  cursor: pointer;
+  color: #000000; /* Black text for contrast */
+  float: right;
+}
+
+hr {
+  border: 1px solid #ff79c6; /* High contrast border */
+}
+
+#header {
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#input-button:hover {
+  background-color: #ff79c6; /* Maintain high contrast on hover */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+li {
+  border: 1px solid #ff79c6; /* High contrast border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn,
+.complete-btn {
+  float: right;
+  color: #ff79c6; /* Button color for high visibility */
+  cursor: pointer;
+  margin: 3px 5px;
+  border: none;
+  padding: 3px 5px;
+  background: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #808080; /* Grayed-out text for completed items */
+  border: 1px solid #808080; /* Matching border for consistency */
+}
+
+.input-title {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(198, 198, 198);
+}
+
+/* Existing styles remain unchanged */
+
+/* Styling for the task list container */
+.list-container {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Styling for individual task items */
+li {
+  border: 1px solid #ff79c6; /* High contrast border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 40px;
+  background-color: #444; /* Slightly darker background for tasks */
+  color: #ffffff; /* Brighter text for contrast */
+}
+
+/* Styling for the task title input */
+li input[readonly] {
+  width: 90%; /* Adjust width to fit the container */
+  margin-right: 10px; /* Space between title and note */
+  border: #ff79c6 1px solid;
+  margin-bottom: 10px;
+  width: 40em;
+  background-color: transparent; /* No background color */
+  color: #ffffff; /* Text color for contrast */
+  font-size: 16px; /* Smaller font size for better readability */
+}
+
+/* Styling for the task note textarea */
+li textarea {
+  width: calc(
+    90% - 40px
+  ); /* Adjust width to fit the container minus the space for the note label */
+  margin-left: 30px; /* Space between note label and textarea */
+  resize: vertical; /* Allow vertical resizing */
+  border: none;
+  background-color: transparent;
+  border: #ff79c6 1px solid;
+  color: #ffffff; /* Text color for contrast */
+  font-size: 14px; /* Smaller font size for better readability */
+  width: 45.9em;
+}
+
+/* Styling for the checkbox */
+li input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and title */
+  border: orchid 1px solid; /* Border color for visibility */
+}
+
+/* Styling for the edit and delete buttons within tasks */
+li.edit-btn,
+li.delete-btn {
+  float: right;
+  color: #ff79c6; /* Button color for high visibility */
+  cursor: pointer;
+  margin: 3px 5px;
+  border: none;
+  padding: 3px 5px;
+  background: none;
+}
+
+/* Additional styles for completed tasks */
+li.completed {
+  text-decoration: line-through;
+  color: #808080; /* Grayed-out text for completed items */
+  border: 1px solid #808080; /* Matching border for consistency */
+}
